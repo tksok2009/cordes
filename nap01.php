@@ -1,15 +1,12 @@
 <?php
-$input_payments = trim(fgets(STDIN));
+$s = trim(fgets(STDIN));
 
 $res =array();
 //$data=array(1, 2, 4, 8, 16);
 
-//$data=array(1, 5, 10, 50, 100, 500);
-$data=array(1,1,1,1,1,1,1,1,1,1,5, 5);
+$data=array(1, 10, 5,);
 
-
-chk_sum($data,$input_payments,$res);
-
+chk_sum($data,$s,$res);
 print_r($res);
 
 function chk_sum($v, $s, &$r, $o=False, $n=0){
@@ -23,4 +20,3 @@ function chk_sum($v, $s, &$r, $o=False, $n=0){
     array_pop($o);
   }
 }
-?>
