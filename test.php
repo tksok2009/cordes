@@ -40,7 +40,7 @@ for ($en1 = 0; $en1 <= $En1->stock ; $en1++) {
 			$sum =  $en500*500 + $en100*100 + $en50*50 + $en10*10 + $en5*5 + $en1*1;
 					
 			if($input_payments == $sum ){
-						echo PHP_EOL. "[" .$en500." ".$en100 ." ".$en50. " " .$en10. " ".$en5." ".$en1. "]" .PHP_EOL;
+						echo PHP_EOL. "[" .$en500." ".$en100 ." ".$en50. " " .$en10. " ".$en5." ".$en1. "]";
 						$patterns = $patterns + 1;
 			}
 

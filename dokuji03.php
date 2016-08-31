@@ -50,28 +50,31 @@ fn($n,$r);
 
 
 
-
-
 if($input_payments>=50){
 // 10 -> 50 logic
 $n = floor(($input_payments - 50)/5);
 
-
-
 for ($i=0; $i <= $n ; $i=$i+2) {
-
-$ck = $n-$i; // 4 - 0 = 0/ 4 -2 = 2 / 4-4 = 0 
-
-//print_r($ck . " ");
-
-//if($ck == 2){ $r = $r + 1; }
-
+$ck = $n-$i;
 fn($ck,$r);
 
 }
 }
 
 
+
+
+
+if($input_payments>=100){
+// 10 -> 50 logic
+$n = floor($input_payments / 50);
+
+for ($i=0; $i <= $n ; $i=$i+2) {
+$ck = $n-$i;
+fn($ck,$r);
+
+}
+}
 
 
 
